@@ -65,24 +65,24 @@ If you find Deformable DETR useful in your research, please consider citing:
 
 ### Requirements
 
-* Linux, CUDA>=9.2, GCC>=5.4
+* Linux, CUDA>=12.4, G++>=13.3
   
-* Python>=3.7
+* Python>=3.10
 
     We recommend you to use Anaconda to create a conda environment:
     ```bash
-    conda create -n deformable_detr python=3.7 pip
+    conda create -n deformable_detr python=3.10 pip -y
     ```
     Then, activate the environment:
     ```bash
     conda activate deformable_detr
     ```
   
-* PyTorch>=1.5.1, torchvision>=0.6.1 (following instructions [here](https://pytorch.org/))
+* PyTorch>=2.5.1, torchvision>=0.20.1 (following instructions [here](https://pytorch.org/))
 
-    For example, if your CUDA version is 9.2, you could install pytorch and torchvision as following:
+    For example, if your CUDA version is 12.4, you could install pytorch and torchvision as following:
     ```bash
-    conda install pytorch=1.5.1 torchvision=0.6.1 cudatoolkit=9.2 -c pytorch
+    conda install pytorch torchvision pytorch-cuda=12.4 -c pytorch -c nvidia
     ```
   
 * Other requirements
